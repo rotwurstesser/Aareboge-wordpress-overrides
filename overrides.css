@@ -52,6 +52,34 @@ ul#menu-main li a:hover {
   text-decoration: none;
 }
 
+article.tag-arena h2,
+article.tag-arena a:hover,
+article.tag-arena a {
+  color: #7030a1;
+}
+
+article.tag-modern h2,
+article.tag-modern a:hover,
+article.tag-modern a {
+  color: #a62326;
+}
+
+@media only screen and (min-width: 768px) {
+  .entry-content article {
+    width: calc(50% - 20px);
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+  }
+  .entry-content article:nth-child(odd) {
+    padding-left: 10px;
+  }
+
+  .entry-content article:nth-child(even) {
+    padding-right: 10px;
+  }
+}
+
 .page-header,
 .widget {
   border-top: 1px solid #c5c5c5;
@@ -62,11 +90,11 @@ ul#menu-main li a:hover {
   padding-bottom: 20px;
 }
 
-footer.site-footer  a.imprint {
-    display: none;
+footer.site-footer a.imprint {
+  display: none;
 }
 
-footer.site-footer  span.site-title:after {
-    display: none;
-    content: "";
+footer.site-footer span.site-title:after {
+  display: none;
+  content: '';
 }
